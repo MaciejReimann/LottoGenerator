@@ -1,0 +1,23 @@
+{
+  "name": "lottogenerator",
+  "version": "1.0.0",
+  "description": "Lotto Simulator",
+  "main": "lotto.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaciejReimann/lotto-generator.git"
+  },
+  "author": "Maciej Reimann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaciejReimann/lotto-generator/issues"
+  },
+  "homepage": "https://github.com/MaciejReimann/lotto-generator#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

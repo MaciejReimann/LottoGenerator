@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lotto Simulator</title>
+    <meta name="Random Numbers Generator" content="...">
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Lotto Simulator</h1>
+    </header>
+    <div id='main-container'>
+        <div id='left-half'>
+            <div class='input-elements' id='form-1'>
+                <p id ="welcome">Below put 6 unique numbers from 1 to 49:</p>
+                <input class='number' type='text' id='number_1' name='number1' size="2" maxlength="2" autofocus>
+                <input class='number' type='text' id='number_2' name='number2'  size="2" maxlength="2">
+                <input class='number' type='text' id='number_3' name='number3'  size="2" maxlength="2">
+                <input class='number' type='text' id='number_4' name='number4'  size="2" maxlength="2">
+                <input class='number' type='text' id='number_5' name='number5'  size="2" maxlength="2">
+                <input class='number' type='text' id='number_6' name='number6'  size="2" maxlength="2">
+            </div>
+            <div class='input-elements' id='validation-alerts'>
+
+            </div>
+            <div class='input-elements' id='number-of-times'>
+                <p>How many draws should I make? <br>
+                Give me some really HUGE number</p>
+                <input class='number' type='text' id='how-many' size="1000000000000000" >
+
+<!--                <p>That will take zirca...</p>-->
+            </div>
+             <div class='input-elements' id='timer'>
+                <p id='or'>or</p>
+            </div>
+            <div class='input-elements'>
+                <p id='set'>Set the Timer</p>
+            </div>
+            <div class='input-elements' id='timer-elements'>
+               <p><input class='number' type='text' id='hours' size="2" maxlength="2" value='00'></p><p>h</p>
+                <p><input class='number' type='text' id='minutes' size="2" maxlength="2" value='00'></p><p>m</p>
+               <p><input class='number' type='text' id='seconds' size="2" maxlength="2" value='00'></p><p>s</p>
+
+            </div>
+            <div class='input-elements' id='main-buttons'>
+                <button id='launch-worker' disabled>Launch</button>
+                <button id='refresh' disabled>Refresh</button>
+            </div>
+
+        </div>
+<!--        left half-->
+        <div id='right-half'>
+            <div>
+                <p>Report:</p>
+            </div>
+        </div>
+
+     </div>
+<!--main container-->
+     <footer>
+        <p>footer</p>
+    </footer>
+     <script src="worker.js"></script>
+    <script src="lotto.js"></script>
+
+</body>
+</html>
