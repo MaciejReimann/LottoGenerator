@@ -1,0 +1,145 @@
+@import url('http://necolas.github.io/normalize.css/3.0.2/normalize.css');
+
+body {
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    
+    margin: 0;
+    }
+
+/*
+p {
+    margin: 0;
+}
+*/
+
+header {
+/*    font-family: 'Bungee', cursive;*/
+    
+    text-align: center; 
+    border: dashed 1px black;    
+}
+
+footer {
+    border: dashed 1px black;
+}
+
+#main-container {
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+/*    max-height: 100vh;*/
+    flex-wrap: wrap;
+    text-align: center;
+/*    flex-shrink: 2;*/
+}
+
+#left-half,
+#right-half {
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+/*    max-height: 100vh;*/
+    text-align: center;
+    max-width: 350px;
+    height: 75vh;
+    width: 40vw;
+    border: dashed 1px black;
+    padding: 15px;
+    }
+
+#validation-alerts {
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    font-weight: 600;
+}
+
+
+#timer-elements {
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    height: 35px;
+        
+}
+
+#timer-elements p {
+    padding:0 20px 0 5px;
+    margin: 0;
+}
+
+.number {
+    font-style: bold;
+    
+    
+}
+
+input {
+    border: none;
+    border-bottom: solid 1px lightgrey;
+}
+
+.input-elements input {
+    text-align: center;
+}
+
+#main-buttons {
+    margin: 40px 0 15px 0;
+/*    align-self: flex-end;*/
+  
+/*    background-color: rgb(225, 225, 225);*/
+    
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/**************  Footer  **************/
+
+footer {
+    height: 5vh;
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+
+/*
+button {
+  background-color: rgb(82, 186, 179);
+  border-radius: 6px;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-transform: uppercase;
+  width: 200px;
+  cursor: pointer;
+}
+#placeholder {
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
+}*/
